@@ -141,33 +141,49 @@
 
 /* maximal distance to look for polar ligand atoms for interface target
    atoms */
-#define  HPHIL_MATCH_DIST                5.0
+/* #define  HPHIL_MATCH_DIST             5.0 */
+/* Oct. 21, 2024 */
+#define  HPHIL_MATCH_DIST                6.0
 
 /* the range of donor acceptor distances in which a H-bond can be formed */
-#define  MIN_HBOND_LENGTH_HYDROGEN       1.5
+/* #define  MIN_HBOND_LENGTH_HYDROGEN    1.5 */
+/* Oct. 21, 2024 */
+#define  MIN_HBOND_LENGTH_HYDROGEN       1.0
 
 /*Changed to 2.4 for donor-acceptor project
 #define  MIN_HBOND_LENGTH */
-#define  MIN_HBOND_LENGTH                2.4
+/* #define  MIN_HBOND_LENGTH             2.4 */
+/* Oct. 21, 2024 */
+#define  MIN_HBOND_LENGTH                1.9
 
+/* #define  MAX_HBOND_LENGTH             3.5 */
+/* Oct. 21, 2024 */
+#define  MAX_HBOND_LENGTH                4.0
 
-#define  MAX_HBOND_LENGTH                3.5
+/* #define  MIN_HBOND_LENGTH_HYDROGEN_2  2.25 */
+/* Oct. 21, 2024 */
+#define  MIN_HBOND_LENGTH_HYDROGEN_2     1.75
 
-
-#define  MIN_HBOND_LENGTH_HYDROGEN_2     2.25
 /* (MIN_HBOND_LENGTH - 0.0005)**2 */
-
 /*Changed to 2.4^2 for donor-acceptor project
 #define  MIN_HBOND_LENGTH_MINUS_TOL_2    6.2475 */
-#define  MIN_HBOND_LENGTH_MINUS_TOL_2     5.7595
+/* #define  MIN_HBOND_LENGTH_MINUS_TOL_2 5.7595 */
+/* Oct. 21, 2024 */
+#define  MIN_HBOND_LENGTH_MINUS_TOL_2    3.6081
 
 /*Changed to 2.4^2 for donor-acceptor project
 #define  MIN_HBOND_LENGTH_2              6.25 */
-#define  MIN_HBOND_LENGTH_2              5.7595
+/* #define  MIN_HBOND_LENGTH_2           5.7595 */
+/* Oct. 21, 2024 */
+#define  MIN_HBOND_LENGTH_2              3.6081
 
-#define  MAX_HBOND_LENGTH_2             12.25
+/* #define  MAX_HBOND_LENGTH_2           12.25 */
+/* Oct. 21, 2024 */
+#define  MAX_HBOND_LENGTH_2             15.996
 /* (MAX_HBOND_LENGTH + 0.0005)**2 */
-#define  MAX_HBOND_LENGTH_PLUS_TOL_2    12.2535
+/* #define  MAX_HBOND_LENGTH_PLUS_TOL_2 12.2535 */
+/* Oct. 21, 2024 */
+#define  MAX_HBOND_LENGTH_PLUS_TOL_2    15.996
 
 
 /* added to check metal hbond  12/03/2003 */
@@ -187,8 +203,13 @@
 #define  MAX_TOTAL_METAL_HBOND           100
 
 /* the range for the donor-hydrogen-acceptor angle in a H-bond */
-#define  MIN_HYDROGEN_ANGLE              120
-#define  MAX_HYDROGEN_ANGLE              180
+/* Oct. 21, 2024 */
+/* #define  MIN_HYDROGEN_ANGLE           120 */
+#define  MIN_HYDROGEN_ANGLE              90
+/* Oct. 21, 2024 */
+/* #define  MAX_HYDROGEN_ANGLE           180 */
+#define  MAX_HYDROGEN_ANGLE              210
+
 #define  FAILURE_ANGLE                   300
 #define  MIN_PREACCEPTOR_ANGLE            90
 #define  MAX_PREACCEPTOR_ANGLE           180
